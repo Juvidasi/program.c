@@ -5,19 +5,19 @@ int main() {
     int casasTorre = 5;
     int casasBispo = 5;
     int casasRainha = 8;
+    int casasBaixoCavalo = 2;
+    int casasEsquerdaCavalo = 1;
 
-    // ------------------------------
+
     // Torre -> usa FOR
-    // Move-se em linha reta. Vamos simular 5 casas para a direita.
-    // ------------------------------
-    printf("Movimento da Torre:\n");
+    
+        printf("Movimento da Torre:\n");
     for (int i = 1; i <= casasTorre; i++) {
         printf("direita\n");
     }
 
     // Bispo -> usa WHILE
-    // Move-se em diagonal. Vamos simular 5 casas "Cima + Direita".
-   
+      
     printf("\nMovimento do Bispo:\n");
     int i = 1;
     while (i <= casasBispo) {
@@ -26,7 +26,6 @@ int main() {
     }
    
     // Rainha -> usa DO-WHILE
-    // Move-se em qualquer direção. Vamos simular 8 casas para a esquerda.
    
     printf("\nMovimento da Rainha:\n");
     int j = 1;
@@ -35,6 +34,28 @@ int main() {
         j++;
     } while (j <= casasRainha);
 
+    //cavalo -> usa FOR + WHILE aninhados
+    //movimento: 2 casas para baixo + 1 casa para esquerda
+
+    printf ("\nMovimento do Cavalo: \n");
+
+    //Primeiro loop FOR: movimento para baixo
+    for (int k = 1; k <= casasBaixoCavalo; k++){
+
+    }
+
+    // loop WHILE aninhado: movimento para baixo
+    for (int k =1; k <= casasBaixoCavalo; k++) {
+
+    }
+
+    //loop While aninhado: movimento para esquerda
+    int l = 1;
+    while (l <= casasEsquerdaCavalo) {
+        printf("Esquerda\n");
+        l++;
+
+    }
     return 0;
 }
 
